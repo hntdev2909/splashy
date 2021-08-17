@@ -1,22 +1,70 @@
+@media (hover: hover) {
+      .action__bussiness:hover {
+            color: var(--black-color);
+            background: var(--white-color);
+      }
+
+      .intro__download:hover {
+            padding: 12px 60px 12px 30px;
+            color: var(--white-color);
+            background: var(--black-color);
+      }
+
+      .intro__download:hover::before {
+            opacity: 0;
+      }
+
+      .intro__download:hover::after {
+            opacity: 1;
+      }
+
+      .downloads__link:hover span {
+            opacity: 1;
+      }
+
+      .downloads__link:hover::before {
+            opacity: 1;
+      }
+
+      .downloads__link:hover::after {
+            opacity: 0;
+      }
+
+      .footer__social:hover {
+            opacity: 0.5;
+      }
+
+      .footer__link:hover {
+            opacity: 1.1;
+      }
+
+      .footer__mail:hover {
+            opacity: 1;
+      }
+
+      .footer__agency:hover {
+            opacity: 0.6;
+      }
+
+      .link__page:hover {
+            opacity: 1;
+      }
+}
+
 /* X-Small devices (portrait phones, less than 576px)
  No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
+@media (min-width: 576px) {}
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-}
+@media (min-width: 768px) {}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-}
+@media (min-width: 992px) {}
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
+@media (min-width: 1200px) {}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-}
+@media (min-width: 1400px) {}

@@ -1,5 +1,4 @@
 const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
 
 const header = $(".header");
 const actionBusiness = $(".action__bussiness");
@@ -28,7 +27,6 @@ window.addEventListener("load", function (e) {
   const introInview = introPosY * -1;
 
 	if (headerHeight - headerInview > 0 && !isShowHeader) {
-		console.log('run here');
     isShowHeader = true;
     header.classList.add("show");
 		actionBusiness.classList.add("show");
@@ -64,8 +62,6 @@ document.addEventListener("scroll", function (e) {
   const footerHeight = footer.getBoundingClientRect().height + 350;
   const footerPosY = footer.getBoundingClientRect().y;
 
-
-	console.log(introHeight, introPosY);
 	if (headerHeight - headerInview > 0 && !isShowHeader) {
     isShowHeader = true;
     header.classList.add("show");

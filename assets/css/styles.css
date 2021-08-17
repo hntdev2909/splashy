@@ -2,6 +2,7 @@
 	width: 100vw;
 	height: 100%;
 	background: var(--background-color);
+	scroll-behavior: smooth;
 }
 
 a {
@@ -23,11 +24,6 @@ a {
 	opacity: 0;
 	animation: ease 0.45s forwards;
 	animation-delay: 1.5s;
-}
-
-.action__bussiness:hover {
-	color: var(--black-color);
-	background: var(--white-color);
 }
 
 .section {
@@ -191,7 +187,7 @@ a {
 	width: 20px;
 	height: 25px;
 	position: absolute;
-	background: url('../icons/windows-alt.svg');
+	background: var(--background);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
@@ -211,24 +207,9 @@ a {
 	background-size: contain;
 	background-position: center;
 	right: 26px;
-	top: 11px;
+	top: 14px;
 	opacity: 0;
 	transition: all ease 0.35s;
-}
-
-
-.intro__download:hover {
-	padding: 14px 60px 14px 30px;
-	color: var(--white-color);
-	background: var(--black-color);
-}
-
-.intro__download:hover::before {
-	opacity: 0;
-}
-
-.intro__download:hover::after {
-	opacity: 1;
 }
 
 .intro__app--mac {
@@ -890,18 +871,6 @@ a {
 	transition: all ease 0.35s;
 }
 
-.downloads__link:hover span {
-	opacity: 1;
-}
-
-.downloads__link:hover::before {
-	opacity: 1;
-}
-
-.downloads__link:hover::after {
-	opacity: 0;
-}
-
 /* footer */
 .footer {
 	padding: 10vh 0 5vh;
@@ -934,10 +903,6 @@ a {
 	transition: all ease 0.25s;
 }
 
-.footer__social:hover {
-	opacity: 0.5;
-}
-
 .footer__legal {
 	display: flex;
 	justify-content: center;
@@ -954,20 +919,12 @@ a {
 	text-shadow: var(--text-shadow);
 }
 
-.footer__link:hover {
-	opacity: 1.1;
-}
-
 .footer__mail {
 	color: var(--white-color);
 	font-size: 20px;
 	opacity: .7;
 	transition: opacity .3s;
 	text-shadow: var(--text-shadow);
-}
-
-.footer__mail:hover {
-	opacity: 1;
 }
 
 .footer__contact {
@@ -985,10 +942,6 @@ a {
 .footer__agency {
 	text-shadow: var(--text-shadow);
 	transition: all ease 0.25s;
-}
-
-.footer__agency:hover {
-	opacity: 0.6;
 }
 
 .footer__year {
@@ -1016,6 +969,20 @@ a {
 
 .footer__contact {
 	animation-delay: 1.25s;
+}
+
+span.text {
+	color: var(--white-color);
+	font-size: 18px;
+	opacity: .7;
+	transition: opacity .3s;
+	text-shadow: var(--text-shadow);
+}
+
+.link__page {
+	opacity: .7;
+	text-shadow: var(--text-shadow);
+	transition: all ease 0.25s;
 }
 
 .letters {
