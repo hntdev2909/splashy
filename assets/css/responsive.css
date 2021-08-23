@@ -51,20 +51,101 @@
       }
 }
 
-/* X-Small devices (portrait phones, less than 576px)
- No media query for `xs` since this is the default in Bootstrap */
+@media (max-width: 320px) {
+      .features {
+            padding: 10vh 30px;
+            box-sizing: border-box;
+      }
+      br {
+            display: block;
+      }
+}
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+      .description {
+            flex-direction: column;
+      }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+      .description .description__wrapper:nth-child(2) {
+            justify-content: center;
+            margin-top: 2em;
+      }
 
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+      .description__content {
+            max-width: 70% !important;
+      }
 
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {}
+      .downloads__list {
+            flex-direction: column;
+      }
+
+      .downloads__item {
+            margin-top: 3em;
+      }      
+
+      .background__sources {
+            grid-template-columns: 1fr !important;
+            gap: 20px;
+      }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+      .features {
+            flex-direction: column;
+      }
+
+      .features__box--free {
+            margin-right: 0;
+      }
+
+      .features__box--premium {
+            margin-top: 2em;
+            margin-left: 0;
+      }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 992px) {
+      .intro__preview {
+            display: none;
+      }
+
+      .intro__title,
+      .intro__caption {
+            text-align: center;
+      }
+
+      .intro__download {
+            margin: 0 auto;
+      }
+
+      .intro__app_show {
+            justify-content: center;
+      }
+
+      .description__content {
+            max-width: 85%;
+      }
+
+      .background__sources {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 160px 160px;
+            gap: 20px;
+            width: unset;
+      }
+
+      .background__image {
+            box-sizing: border-box;
+            width: 100%;
+            margin-right: 0;
+      }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}

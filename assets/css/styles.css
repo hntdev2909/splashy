@@ -10,6 +10,10 @@ a {
 	text-decoration: none;
 }
 
+br {
+	display: none;
+}
+
 .action__bussiness {
 	background: var(--black-color);
 	color: var(--white-color);
@@ -120,7 +124,7 @@ a {
 /* intro */
 
 .intro {
-	width: 100vw;
+	width: calc(100vw - 60px);
 	height: 100vh;
 	display: flex;
 	align-items: center;
@@ -549,10 +553,12 @@ a {
 }
 
 .background__sources {
+	padding: 0 30px;
 	width: 100%;
 	height: auto;
-	display: flex;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 100px 100px;
 }
 
 .background__image--inspirational {
